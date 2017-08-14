@@ -34,9 +34,6 @@
 /*************************************************************************/
 
 #include "cmu_us_kal16.h"
-
-#ifndef ENABLE_CMU_US_KAL16_BUILTIN
 #include "cst_plugins.h"
 mimic_plugin_t mimic_plugin = { "voice_cmu_us_kal16", 0, &voice_cmu_us_kal16_plugin_init, &voice_cmu_us_kal16_plugin_exit};
-#endif
 
