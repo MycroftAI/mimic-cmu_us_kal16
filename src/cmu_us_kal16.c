@@ -96,12 +96,12 @@ void unregister_cmu_us_kal16(cst_voice *vox)
     cmu_us_kal16_diphone = NULL;
 }
 
-void voice_cmu_us_kal16_plugin_init()
+void voice_cmu_us_kal16_plugin_init(mimic_context *ctx)
 {
-   mimic_voice_list = cons_val(voice_val(register_cmu_us_kal16(NULL)), mimic_voice_list);
+    mimic_voice_add(ctx, register_cmu_us_kal16(NULL));
 }
 
-void voice_cmu_us_kal16_plugin_exit()
+void voice_cmu_us_kal16_plugin_exit(mimic_context *ctx)
 {
 }
 

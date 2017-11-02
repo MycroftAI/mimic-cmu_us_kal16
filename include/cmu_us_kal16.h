@@ -31,6 +31,8 @@
  * 
  */
 
-void voice_cmu_us_kal16_plugin_init();
-void voice_cmu_us_kal16_plugin_exit();
+#include "mimic.h"
+
+void voice_cmu_us_kal16_plugin_init(mimic_context *ctx);
+void voice_cmu_us_kal16_plugin_exit(mimic_context *ctx);
 
